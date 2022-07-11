@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lugo</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css"><!--FontAwesome-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/lugo.png"> <!--Favicon-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid" >
+            <a class="navbar-brand lugo" href="#">lugo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <select class="select" id="usuarioActual" onchange="cambiarUsuario();">
+                        <option hidden selected>Usuario</option>
+                    </select>
+                    <li class="nav-item form">
+                        <button id="btn-ordenes" type="button" class="btn btn-ordenes" onclick="getUser();">
+                            Ver Ordenes
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- CATEGORIAS -->
+    <main role="main" class="container">
+        <div class="starter-template">
+            <div class="bienvenida" id="inicio">
+                <!-- MENSAJE DE BIENVENIDA -->
+            </div>
+
+            <div id="categorias">
+                <!-- CONTENIDO -->
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+
+    <!-- BOTON DE PRUEBAS -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-cantidad">
+        Abrir demo modal
+    </button> -->
+    
+    <!-- Modal --><!-- ORDENES --> 
+    <div class="modal fade" id="modal-ordenes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div id="modal-titulo" class="modal-header titulo-modal">
+            </div>
+            <div class="modal-body" id="pedidos-modal">
+                <!-- CONTENIDO -->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm btn-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal --><!-- EMPRESAS Y PRODUCTOS -->
+    <div class="modal fade" id="modal-empresas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div id="titulo-categoria" class="modal-header titulo-modal">
+                <!-- <h3 class="modal-title" id="exampleModalLabel">Restaurantes</h3> -->
+            </div>
+            <div class="modal-body productos-grid" id="empresas-modal">
+                <!-- CONTENIDO -->                
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm btn-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal --><!-- CANTIDAD DE PRODUCTO -->
+    <div class="modal fade" id="modal-cantidad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="orden">
+                    <!-- CONTENIDO -->
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm btn-procesar" data-bs-toggle="modal" data-bs-target="#modal-empresas" onclick="limpiar()">Procesar Orden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DAN ERROR -->
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+    <!-- <script src="js/popper.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Archivo JS -->
+    <script src="js/controlador.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Para usar FontAwesome -->
+    <script src="https://kit.fontawesome.com/2e4493cde1.js" crossorigin="anonymous"></script>
+    <!-- Biblioteca jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+
+    <div class="footer">
+        © 2022 - Tarea 2
+    </div>
+</body>
+</html>

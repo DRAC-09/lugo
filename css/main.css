@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'principal';
+    src: url('/webfonts/Montserrat-ExtraBold.ttf');
+}
+
+body {
+    padding-top: 0;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.card {
+    padding-left: 0;
+    padding-right: 5px;
+    background-color: #440f71 !important;
+}
+
+
+
+/* BARRA MENU */
+.menu{
+    background-color: #5c3287 !important;
+    color: #5c3287 !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.lugo{
+    color: #ffffff !important;
+    font-family: 'principal' !important;
+    font-size: 50px !important;
+}
+
+.flex{
+    justify-content: flex-end;
+}
+
+.user-form {
+    background-color: #ffffff;
+    color: #5c3287 !important;
+}
+
+.select{
+    border: none !important;
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.user-font {
+    font-size: 18px;
+    color: #440f71;
+
+}
+
+.ordenes-form {
+    background-color: #440f71 !important;
+    margin-left: 20px;
+    width: auto;
+    
+}
+
+.btn-ordenes{
+    background-color: #440f71 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    width: auto;
+    height: 40px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.ordenes-font {
+    font-size: 18px;
+    color: #ffffff !important;
+}
+
+.form{
+    height: auto;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+/* CONTENIDO */
+.container{
+    /* background-color: #690c0c; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.saludo {
+    color: #5c3287 !important;
+    font-family: 'principal' !important;
+    font-size: 50px !important;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px !important;
+    color: #5c3287 !important;
+}
+
+
+
+/* MINIATURA */
+#categorias{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+
+}
+
+.descripcion-miniatura{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+    /* background-color: #0f331e; */
+    width: 150px !important;
+    height: 150px !important;
+    padding: 15px 15px 2px 15px;
+    /* padding-bottom: 5px; */
+    border-radius: 20px;
+    
+}
+
+/* .descripcion-miniatura:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+} */
+
+.borde-icono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+h5{
+    font-size: 16px !important;
+    font-family: 'principal' !important;
+    color: white !important;
+}
+
+h6{
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+}
+
+
+/* MODAL - CATEGORIAS*/
+.titulo-modal{
+    background-color: #440f71;
+    width: 100%;
+    height: 50px;
+}
+
+h3{
+    font-size: 20px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold !important;
+    color: #ffffff !important;
+}
+
+.modal-body{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.cuadro-modal{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.192);
+    
+}
+
+.btn-cerrar{
+    border-radius: 50px !important;
+    width: 80px !important;
+    background-color: #440f71 !important;
+    margin: 2px !important;
+}
+
+.n-producto{
+    font-size: 18px !important;
+    color: #440f71 !important;
+    margin: 2px !important;
+}
+
+.n-descripcion{
+    font-size: 14px !important;
+    margin: 2px !important;
+}
+
+.n-precio{
+    font-size: 14px !important;
+    font-weight: bold;
+    text-align: right;
+    color: #000000 !important;
+    margin: 2px !important;
+}
+
+
+/* MODAL - EMPRESAS */
+.modal-lg{
+    max-width: 43% !important;
+}
+
+.empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.192);
+}
+
+.div-fondo{
+    background-image: url('/img/banner.jpg');
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: 'principal';
+    font-size: 25px;
+    text-shadow: 0.1em 0.1em #333;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.productos{
+    padding: 10px;
+}
+
+.btn-pedir{
+    background-color: #5c3287 !important;
+    border-radius: 50px !important;
+    width: 60px !important;
+    height: 20px !important;
+    border: none !important;
+    padding: 0px !important;
+    font-size: 10px !important;
+}
+
+.product-pre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productos-grid{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+
+/* MODAL - CANTIDAD */
+.product-cant{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    width: 100%;
+    height: auto;
+}
+
+.div-input{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#input{
+    width: 65% !important;
+    margin-left: auto !important;
+    border-radius: 5px !important;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.192);
+    margin-left: 5px;
+}
+
+.btn-procesar{
+    background-color: #5c3287 !important;
+    border-radius: 50px !important;
+    width: 120px !important;
+    height: auto !important;
+    border: none !important;
+    padding: 0px !important;
+    font-size: 12px !important;
+    text-align: center;
+    align-items: center;
+    padding: 2px !important;
+}
+
+.btn-close{
+    margin-left: 100% !important;
+}
+
+
+
+/* PIE DE PAGINA */
+.footer{
+    background-color: #5c3287;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 72%;
+    height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 12px;
+    
+}
